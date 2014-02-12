@@ -4,6 +4,11 @@ apt-get -y install libaio1 net-tools bc nano
 
 cd /tmp/filesOracle
 
+#comment in for install sqlplus 12.1
+#echo /usr/lib/oracle/12.1/client64/lib/ > /etc/ld.so.conf.d/oracle.conf
+##dpkg -i /tmp/filesOracle/oracle-instantclient12.1-*.deb
+#ldconfig
+
 #resolve some stupid link conflits
 ln -s /usr/bin/awk /bin/awk
 mkdir /var/lock/subsys
